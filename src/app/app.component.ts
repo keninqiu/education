@@ -1,20 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
-import { Router } from '@angular/router';
-
+import { Component } from '@angular/core';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  
-  constructor(public location: Location, public router: Router) {}
-
-  ngOnInit() {
-    if (this.location.path() =='' || this.location.path() == '/home') {
-      this.router.navigate(['/home/dashboard']);
-    }
+export class AppComponent {
+  myData: Array<any>;
+  constructor(private http:Http) {
+  	this.http.get('http://jsonplaceholder.typicode.com/photos')
+  	.map(response => response.json())
+  	.subscribe(res => this.myData = res);
   }
-
 }
