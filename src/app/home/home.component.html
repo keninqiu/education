@@ -1,0 +1,8 @@
+<md-grid-list cols="3" gutterSize="4px" >
+   <!--<md-grid-tile><button md-raised-button ></button></md-grid-tile>-->
+   <md-grid-tile  [colspan]="options.login"><button md-raised-button color="primary"  class="big-btn" [routerLink]="['/app/login']">Login</button></md-grid-tile>
+   <md-grid-tile  [colspan]="options.register" class="transition"><button md-raised-button color="accent" [routerLink]="['/app/register']"  class="big-btn">Register</button></md-grid-tile>
+    <md-grid-tile [colspan]="options.chat"><button md-raised-button color="primary" class="big-btn" [routerLink]="['/app/chat']">Chat</button></md-grid-tile>
+
+   <!--<md-grid-tile><button md-raised-button ></button></md-grid-tile>-->
+</md-grid-list>

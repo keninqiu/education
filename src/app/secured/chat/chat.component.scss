@@ -1,0 +1,23 @@
+md-card{
+    width: 90%;
+    height: 400px;
+    position: relative;
+}
+
+.position-message {
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    padding: 0 20px;
+    width: 100%;
+}
+.msg {
+    display: block;
+    width: 80%;
+}
+.float-right {
+    position: absolute;
+    right:0;
+    bottom: 20px;
+    right:100px;
+}

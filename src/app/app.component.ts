@@ -7,10 +7,5 @@ import 'rxjs/add/operator/map';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  myData: Array<any>;
-  constructor(private http:Http) {
-  	this.http.get('http://jsonplaceholder.typicode.com/photos')
-  	.map(response => response.json())
-  	.subscribe(res => this.myData = res);
-  }
+  title = 'app works!';
 }

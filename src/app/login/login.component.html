@@ -1,0 +1,23 @@
+
+<md-grid-list cols="2" gutterSize="4px">
+  <md-grid-tile [colspan]="2">
+    <md-card>
+      <md-card-subtitle>You need to login before entering chat area</md-card-subtitle>
+      <md-card-title>Login</md-card-title>
+      <md-card-content>
+        <input mdInput placeholder="Email" >
+          <!--<span md-prefix>$&nbsp;</span>-->
+          <!--<span md-suffix>.00</span>-->
+        <input mdInput placeholder="Password" >
+          <!--<span md-prefix>$&nbsp;</span>-->
+          <!--<span md-suffix>.00</span>-->
+
+      </md-card-content>
+      <md-card-actions>
+        <button md-raised-button color="primary">Login</button>
+        <button md-raised-button color="accent" [routerLink]="['/app/home']">Return</button>
+      </md-card-actions>
+    </md-card>
+  </md-grid-tile>
+
+</md-grid-list>

@@ -1,0 +1,28 @@
+<md-toolbar color="primary">
+  <div class="wrapper" role="main">
+    <button md-icon-button [md-menu-trigger-for]="menu">
+      <md-icon>apps</md-icon>
+    </button>
+    <span>
+       Chat Application
+    </span>
+    <md-menu #menu="mdMenu">
+      <button md-menu-item> 
+        <md-icon> home </md-icon>
+        <span> Home </span>
+  </button>
+      <button md-menu-item> 
+    <md-icon> person_pin </md-icon>
+    <span> Login </span>
+  </button>
+      <button md-menu-item> 
+    <md-icon> group_add </md-icon>
+    <span> Register </span>
+  </button>
+      <button md-menu-item disabled> 
+    <md-icon> keyboard_backspace </md-icon>
+    <span> Logout </span>
+  </button>
+    </md-menu>
+  </div>
+</md-toolbar>
