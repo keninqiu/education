@@ -1,21 +1,28 @@
-<md-toolbar color="primary">
+<md-toolbar>
   <div class="wrapper" role="main">
     <button md-icon-button [md-menu-trigger-for]="menu">
       <md-icon>apps</md-icon>
     </button>
-    <span>
-       Chat Application
-    </span>
+
+    <button md-icon-button [mdMenuTriggerFor]="appMenu">
+       中文诗歌
+    </button>
+
+    <md-menu #appMenu="mdMenu">
+      <button md-menu-item [routerLink]="['/app/tang']"> 唐诗 </button>
+      <button md-menu-item [routerLink]="['/app/song']"> 宋词 </button>
+    </md-menu>
+
     <md-menu #menu="mdMenu">
-      <button md-menu-item> 
+      <button md-menu-item [routerLink]="['/app/home']"> 
         <md-icon> home </md-icon>
         <span> Home </span>
   </button>
-      <button md-menu-item> 
+      <button md-menu-item [routerLink]="['/app/login']"> 
     <md-icon> person_pin </md-icon>
     <span> Login </span>
   </button>
-      <button md-menu-item> 
+      <button md-menu-item [routerLink]="['/app/register']"> 
     <md-icon> group_add </md-icon>
     <span> Register </span>
   </button>

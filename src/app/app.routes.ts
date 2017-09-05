@@ -10,13 +10,4 @@ export const ROUTES: Routes = [
     {
         path: 'app', loadChildren: 'app/layout/layout.module#LayoutModule'
     },
-    // {
-    //     path: 'login', loadChildren: () => System.import('./login/login.module')
-    // },
-    // {
-    //     path: 'error', component: ErrorComponent, canActivate: [AuthGuard]
-    // },
-    // {
-    //     path: '**', component: ErrorComponent, canActivate: [AuthGuard]
-    // }
 ];
