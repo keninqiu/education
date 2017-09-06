@@ -10,6 +10,7 @@ const routes: Routes = [
       { path: 'register', loadChildren:'app/register/register.module#RegisterModule' },
       { path: 'chat', loadChildren:'app/secured/chat/chat.module#ChatModule' },
       { path: 'tang', loadChildren:'app/tang/tang.module#TangModule' },
+      { path: 'song', loadChildren:'app/song/song.module#SongModule' },
     //   { path: 'setup', loadChildren: () => System.import('../setup/setup.module') },
     //   { path: 'general', loadChildren: () => System.import('../general/general.module') },
 
