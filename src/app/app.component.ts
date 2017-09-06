@@ -8,4 +8,6 @@ import 'rxjs/add/operator/map';
 })
 export class AppComponent {
   title = 'app works!';
+  audio = new Audio();
+  audio.src = 'app works!';
 }
